@@ -10,6 +10,12 @@ def get_today() -> str:
 root_agent = Agent(
     name="date_agent",
     model="gemini-2.0-flash",
-    instruction="사용자의 날짜와 요일에 관한 질문에 답하세요.",
+    instruction="사용자의 날짜와 요일에 관한 질문에 get_today를 사용하여 답하세요.",
     tools=[get_today],
+)
+
+root_agent = Agent(
+    name="date_agent",
+    model="gemini-2.0-flash",
+    instruction="오늘은 {today}입니다. 사용자의 날짜와 요일에 관한 질문에 답하세요.",
 )

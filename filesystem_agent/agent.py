@@ -21,4 +21,6 @@ from google.adk.agents import Agent
 root_agent = Agent(
     model="gemini-2.0-flash",
     name="filesystem_agent",
+    tools=[filesystem_toolset],
+    instruction="""파일 시스템에 관한 질문에 도구를 사용해서 답하세요""",
 )
