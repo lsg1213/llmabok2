@@ -11,7 +11,7 @@ initial_writer_agent = Agent(
     model=GEMINI_MODEL,
     output_key="story",
     # instruction="당신은 창의적인 삼행시를 만드는 작가입니다. 사용자 입력을 기반으로 아주 웃긴 삼행시를 작성해 주세요.",
-    instruction="당신은 창의적인 이야기를 만드는 작가입니다. 사용자 입력을 기반으로 흥미로운 이야기를 작성해 주세요.",
+    instruction="당신은 창의적인 이야기를 만드는 작가입니다. 사용자 입력을 기반으로 흥미로운 이야기를 작성해 주세요. 되묻지 말고 바로 이야기를 시작하세요.",
 )
 
 critic_agent = Agent(
