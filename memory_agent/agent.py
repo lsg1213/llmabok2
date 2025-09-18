@@ -8,5 +8,5 @@ root_agent = Agent(
     tools=[load_memory]
 )
 
-# InMemorySessionService.search_memory()는 영어 단어만 비교하면서 검색한다.
+# InMemoryMemoryService.search_memory()는 영어 단어만 비교하면서 검색한다.
 # 다국어 지원이 안됨.
